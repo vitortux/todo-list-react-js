@@ -21,7 +21,7 @@ function TodoForm({ onSubmit }) {
   return (
     <Form onSubmit={handleSubmit}>
       <div>
-        <Label>Novo Item:</Label>
+        <Label>Nova tarefa:</Label>
         <input
           type="text"
           placeholder="Adicionar tarefa"
