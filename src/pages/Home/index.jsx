@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Wrapper } from "./styles";
 
 import TodoForm from "../../components/TodoForm";
@@ -6,7 +6,7 @@ import TodoList from "../../components/TodoList";
 
 function Home() {
   const [todos, setTodos] = useState(() => {
-    const localValue = localStorage.getItem("ITEMS");
+    const localValue = localStorage.getItem("ITEM");
 
     if (localValue == null) return []; // Se não tiver nada no local storage, retorna um array vazio
 
